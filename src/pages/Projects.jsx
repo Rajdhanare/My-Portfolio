@@ -2,8 +2,8 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-[#020617] to-[#0f172a]">
-      <div className="w-full">
+    <section className="py-20 bg-gradient-to-b from-slate-950 to-slate-900">     
+     <div className="w-full">
         <h2 className="text-3xl font-bold text-center mb-10">Projects</h2>
 
         <div className="p-6 rounded-xl hover:scale-85 transition">
