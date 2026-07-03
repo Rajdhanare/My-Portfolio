@@ -5,22 +5,25 @@ const Projects = () => {
   const projects = [
     {
       title: "Portfolio Website",
-      desc: "Designed and developed a modern personal portfolio using React, Vite and Tailwind CSS with responsive UI, smooth animations, resume download, project showcase and contact section.",
-      tags: ["React", "Vite", "Tailwind CSS"],
+      desc: "Designed and developed a modern personal portfolio using React, Vite and Tailwind CSS with responsive UI, smooth animations, resume download, and project showcase.",
+      tags: ["React", "Tailwind CSS", "Vite"],
+
       github: "https://github.com/Rajdhanare/My-Portfolio",
       live: "https://my-portfolio-five-bice-59.vercel.app",
     },
     {
       title: "Swiggy Clone",
-      desc: "Built a full-stack MERN Swiggy clone with authentication, cart system, REST APIs and responsive UI.",
+      desc: "A full-stack MERN Swiggy Clone project is currently under development. It will include authentication, cart functionality, food ordering, and REST APIs.",
       tags: ["MongoDB", "Express", "React", "Node.js"],
+
       github: "#",
       live: "#",
     },
     {
       title: "MERN Stack Project",
-      desc: "Developed a full-stack web application using React, Node.js, Express.js and MongoDB.",
+      desc: "A complete MERN Stack application is currently under development. More exciting features will be added soon.",
       tags: ["MongoDB", "Express", "React", "Node.js"],
+
       github: "#",
       live: "#",
     },
@@ -41,7 +44,7 @@ const Projects = () => {
           {projects.map((item, index) => (
             <div
               key={index}
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 flex flex-col hover:border-[#7ee787]/60 hover:-translate-y-1 transition-all duration-300"
+              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 flex flex-col hover:border-[#7ee787]/60 hover:-translate-y-2 transition-all duration-300"
             >
               <div className="flex items-center justify-between mb-4">
                 <FaGithub className="text-2xl text-[#8b949e]" />
@@ -51,19 +54,19 @@ const Projects = () => {
                 </span>
               </div>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mb-2 font-mono">
+              <h3 className="text-xl font-semibold text-[#e6edf3] mb-3">
                 {item.title}
               </h3>
 
-              <p className="text-[#8b949e] text-sm leading-relaxed mb-4 flex-1">
+              <p className="text-[#8b949e] text-sm leading-6 flex-1">
                 {item.desc}
               </p>
 
-              <div className="flex flex-wrap gap-2 mb-5">
+              <div className="flex flex-wrap gap-2 mt-5 mb-6">
                 {item.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs font-mono px-2 py-1 rounded-full bg-[#0d1117] border border-[#30363d] text-[#7ee787]"
+                    className="text-xs font-mono px-3 py-1 rounded-full bg-[#0d1117] border border-[#30363d] text-[#7ee787]"
                   >
                     {tag}
                   </span>
@@ -75,10 +78,10 @@ const Projects = () => {
                   href={item.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg border transition-all duration-300 ${
+                  className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg border transition ${
                     item.github === "#"
-                      ? "pointer-events-none bg-[#21262d] border-[#30363d] text-[#6e7681]"
-                      : "bg-[#0d1117] border-[#30363d] text-[#c9d1d9] hover:border-[#7ee787] hover:text-[#7ee787]"
+                      ? "pointer-events-none opacity-50 border-[#30363d] text-[#8b949e]"
+                      : "border-[#30363d] text-[#c9d1d9] hover:border-[#7ee787] hover:text-[#7ee787]"
                   }`}
                 >
                   <FaGithub />
@@ -89,10 +92,10 @@ const Projects = () => {
                   href={item.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 ${
+                  className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg transition ${
                     item.live === "#"
-                      ? "pointer-events-none bg-[#30363d] text-[#6e7681]"
-                      : "bg-[#7ee787] text-[#0d1117] font-semibold hover:bg-[#a3f7bf]"
+                      ? "pointer-events-none opacity-50 bg-[#30363d] text-[#8b949e]"
+                      : "bg-[#7ee787] text-[#0d1117] hover:bg-[#a3f7bf] font-semibold"
                   }`}
                 >
                   <FaExternalLinkAlt size={12} />
