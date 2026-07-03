@@ -4,116 +4,140 @@ import { TfiEmail } from "react-icons/tfi";
 
 function Contact() {
   return (
-    <section className="text-gray-300 py-20 bg-[#020617]">
+    <section className="text-[#c9d1d9] py-20 bg-[#0d1117]">
       <div className="max-w-6xl mx-auto px-6">
-
-        <h3 className="text-4xl font-bold text-center text-white mb-12">
+        <p className="text-center font-mono text-[#8b949e] text-sm mb-2">
+          05. Say Hello
+        </p>
+        <h3 className="text-3xl md:text-4xl font-bold text-center text-[#e6edf3] mb-12">
           Contact
         </h3>
 
-        {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
           {/* Left Side */}
-          <div className="bg-[#0f172a] border border-gray-700 p-8 md:p-12 rounded-3xl shadow-lg hover:border-cyan-400 transition">
-
-            <h2 className="text-2xl font-bold mb-6">Get In Touch</h2>
+          <div className="bg-[#161b22] border border-[#30363d] p-8 md:p-12 rounded-2xl shadow-lg hover:border-[#7ee787]/50 transition">
+            <h2 className="text-2xl font-bold mb-6 text-[#e6edf3] font-mono">
+              Get In Touch
+            </h2>
 
             <ul className="space-y-4">
-
               <li className="flex items-center gap-3">
-                <MdAttachEmail />
-                <a href="mailto:rajkumawat95755@gmail.com">
+                <MdAttachEmail className="text-[#7ee787]" />
+                <a
+                  href="mailto:rajkumawat95755@gmail.com"
+                  className="hover:text-[#7ee787] transition"
+                >
                   rajkumawat95755@gmail.com
                 </a>
               </li>
 
               <li className="flex items-center gap-3">
-                <MdPhoneInTalk />
-                <a href="tel:+919575501380">+91 9575501380</a>
+                <MdPhoneInTalk className="text-[#79c0ff]" />
+                <a href="tel:+919575501380" className="hover:text-[#79c0ff] transition">
+                  +91 9575501380
+                </a>
               </li>
 
               <li className="flex items-center gap-3">
-                <FaWhatsappSquare />
-                <a href="https://wa.me/919575501380">WhatsApp</a>
+                <FaWhatsappSquare className="text-[#ffa657]" />
+                <a
+                  href="https://wa.me/919575501380"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-[#ffa657] transition"
+                >
+                  WhatsApp
+                </a>
               </li>
-
             </ul>
 
             {/* Social Icons */}
-            <div className="mt-6">
-              <ul className="flex gap-5 text-xl">
-
-                <li className="hover:text-cyan-400 cursor-pointer transition">
-                  <FaInstagram />
+            <div className="mt-8">
+              <ul className="flex gap-5 text-xl text-[#8b949e]">
+                <li>
+                  <a
+                    href="https://instagram.com/rajdhanare"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-[#f778ba] transition"
+                  >
+                    <FaInstagram />
+                  </a>
                 </li>
-
-                <li className="hover:text-cyan-400 cursor-pointer transition">
-                  <FaLinkedinIn />
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/raj-dhanare-b95817269"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-[#79c0ff] transition"
+                  >
+                    <FaLinkedinIn />
+                  </a>
                 </li>
-
-                <li className="hover:text-cyan-400 cursor-pointer transition">
-                  <FaGithub />
+                <li>
+                  <a
+                    href="https://github.com/rajdhanare"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-[#e6edf3] transition"
+                  >
+                    <FaGithub />
+                  </a>
                 </li>
-
-                <li className="hover:text-cyan-400 cursor-pointer transition">
-                  <TfiEmail />
+                <li>
+                  <a
+                    href="mailto:rajkumawat95755@gmail.com"
+                    className="hover:text-[#7ee787] transition"
+                  >
+                    <TfiEmail />
+                  </a>
                 </li>
-
               </ul>
             </div>
-
           </div>
 
           {/* Right Side Form */}
-          <div className="bg-[#0f172a] border border-gray-700 p-8 md:p-12 rounded-3xl shadow-lg hover:border-cyan-400 transition">
-
+          <div className="bg-[#161b22] border border-[#30363d] p-8 md:p-12 rounded-2xl shadow-lg hover:border-[#7ee787]/50 transition">
             <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
-
               <input
                 type="text"
                 placeholder="First Name"
-                className="bg-[#020617] border border-gray-700 px-4 py-2 rounded-lg w-full text-white focus:outline-none focus:border-cyan-400"
+                className="bg-[#0d1117] border border-[#30363d] px-4 py-2 rounded-lg w-full text-[#e6edf3] focus:outline-none focus:border-[#7ee787]"
               />
 
               <input
                 type="text"
                 placeholder="Last Name"
-                className="bg-[#020617] border border-gray-700 px-4 py-2 rounded-lg w-full text-white focus:outline-none focus:border-cyan-400"
+                className="bg-[#0d1117] border border-[#30363d] px-4 py-2 rounded-lg w-full text-[#e6edf3] focus:outline-none focus:border-[#7ee787]"
               />
 
               <input
                 type="tel"
                 placeholder="Mobile Number"
-                className="bg-[#020617] border border-gray-700 px-4 py-2 rounded-lg w-full text-white focus:outline-none focus:border-cyan-400"
+                className="bg-[#0d1117] border border-[#30363d] px-4 py-2 rounded-lg w-full text-[#e6edf3] focus:outline-none focus:border-[#7ee787]"
               />
 
               <input
                 type="email"
                 placeholder="Email"
-                className="bg-[#020617] border border-gray-700 px-4 py-2 rounded-lg w-full text-white focus:outline-none focus:border-cyan-400"
+                className="bg-[#0d1117] border border-[#30363d] px-4 py-2 rounded-lg w-full text-[#e6edf3] focus:outline-none focus:border-[#7ee787]"
               />
 
-              {/* Message */}
               <textarea
                 placeholder="Write your message..."
-                className="bg-[#020617] border border-gray-700 px-4 py-3 rounded-lg w-full text-white focus:outline-none focus:border-cyan-400 md:col-span-2"
+                rows={4}
+                className="bg-[#0d1117] border border-[#30363d] px-4 py-3 rounded-lg w-full text-[#e6edf3] focus:outline-none focus:border-[#7ee787] md:col-span-2"
               />
 
-              {/* Button */}
               <button
                 type="submit"
-                className="bg-cyan-400 text-black py-2 px-6 rounded-lg hover:bg-cyan-300 transition md:col-span-2"
+                className="bg-[#7ee787] text-[#0d1117] font-semibold py-2 px-6 rounded-lg hover:bg-[#a3f7bf] transition md:col-span-2"
               >
                 Send Message
               </button>
-
             </form>
-
           </div>
-
         </div>
-
       </div>
     </section>
   );
