@@ -34,7 +34,7 @@ const About = () => {
               <span className="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
               <span className="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
               <span className="w-3 h-3 rounded-full bg-[#27c93f]"></span>
-              <span className="ml-2">about.js</span>
+              <span className="ml-2">about</span>
             </div>
 
             <p className="text-[#6e7681]">{"/**"}</p>

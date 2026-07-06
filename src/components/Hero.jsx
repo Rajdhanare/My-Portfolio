@@ -114,7 +114,7 @@ const Hero = () => {
             <span className="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
             <span className="w-3 h-3 rounded-full bg-[#27c93f]"></span>
             <span className="ml-3 text-xs font-mono text-[#8b949e]">
-              developer.js
+              developer 
             </span>
           </div>
 

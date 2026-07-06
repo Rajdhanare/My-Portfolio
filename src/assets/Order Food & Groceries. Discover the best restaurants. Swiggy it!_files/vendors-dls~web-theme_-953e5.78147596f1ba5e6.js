@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["vendors-dls~web-theme_-953e5"],{GwYh:function(e,o,n){"use strict";var r=n("j/s1");Object.defineProperty(o,"useTheme",{enumerable:!0,get:function(){return r.useTheme}})},ca8O:function(e,o,n){"use strict";var r=n("j/s1");o.useColorMode=function(){return{colorMode:r.useTheme().colorMode}}}}]);
-//# sourceMappingURL=vendors-dls~web-theme_-953e5.78147596f1ba5e6.js.map

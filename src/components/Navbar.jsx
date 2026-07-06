@@ -4,11 +4,11 @@ import { TiThMenu } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
 
 const links = [
-  { name: "home.jsx", path: "/", dot: "#7ee787" },
-  { name: "about.jsx", path: "/About", dot: "#d2a8ff" },
-  { name: "projects.jsx", path: "/Projects", dot: "#79c0ff" },
-  { name: "experience.jsx", path: "/Experiences", dot: "#ffa657" },
-  { name: "contact.jsx", path: "/Contact", dot: "#f778ba" },
+  { name: "home", path: "/", dot: "#7ee787" },
+  { name: "about", path: "/About", dot: "#d2a8ff" },
+  { name: "projects", path: "/Projects", dot: "#79c0ff" },
+  { name: "experience", path: "/Experiences", dot: "#ffa657" },
+  { name: "contact", path: "/Contact", dot: "#f778ba" },
 ];
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
         <Link to="/" className="font-mono text-lg md:text-xl font-bold">
           <span className="text-[#7ee787]">raj</span>
-          <span className="text-[#8b949e]">.dev</span>
+          {/* <span className="text-[#8b949e]">.dev</span> */}
         </Link>
 
         {/* Desktop Menu - editor tabs style */}
