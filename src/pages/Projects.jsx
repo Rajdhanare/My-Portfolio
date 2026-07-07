@@ -8,9 +8,26 @@ import MernImg from "../assets/laptop.jpg";
 const Projects = () => {
   const projects = [
     {
+      title: "HRMS - Human Resource Management System",
+      image: MernImg,
+      desc: "A full-stack Human Resource Management System built using the MERN Stack. It features secure authentication, employee management, attendance tracking, leave management, payroll, recruitment, role-based access control, and a modern responsive dashboard.",
+      tags: [
+        "MongoDB",
+        "Express",
+        "React",
+        "Node.js",
+        "JWT",
+        "Tailwind CSS",
+      ],
+      github: "https://github.com/Rajdhanare/HRMS",
+      live: "https://hrms-five-delta.vercel.app",
+      status: "Completed",
+    },
+
+    {
       title: "Portfolio Website",
       image: PortfolioImg,
-      desc: "Designed and developed a modern responsive developer portfolio using React, Vite and Tailwind CSS with smooth animations, responsive layout and resume download feature.",
+      desc: "Designed and developed a modern responsive developer portfolio using React, Vite and Tailwind CSS with smooth animations, responsive layout, and resume download functionality.",
       tags: ["React", "Tailwind CSS", "Vite"],
       github: "https://github.com/Rajdhanare/My-Portfolio",
       live: "https://my-portfolio-five-bice-59.vercel.app",
@@ -20,21 +37,11 @@ const Projects = () => {
     {
       title: "Swiggy Clone",
       image: SwiggyImg,
-      desc: "Full Stack MERN Swiggy Clone with authentication, shopping cart, REST APIs and payment integration. Currently under development.",
+      desc: "A Swiggy-inspired food delivery application built using the MERN Stack with authentication, shopping cart, REST APIs, and responsive UI.",
       tags: ["MongoDB", "Express", "React", "Node.js"],
-      github: "#",
-      live: "#",
-      status: "Coming Soon",
-    },
-
-    {
-      title: "MERN Stack Project",
-      image: MernImg,
-      desc: "Complete MERN Stack application using MongoDB, Express, React and Node.js with authentication, CRUD operations and REST APIs.",
-      tags: ["MongoDB", "Express", "React", "Node.js"],
-      github: "#",
-      live: "#",
-      status: "Coming Soon",
+      github: "https://github.com/Rajdhanare/swiggy-clone",
+      live: "https://swiggy-clone.vercel.app",
+      status: "Completed",
     },
   ];
 
@@ -55,14 +62,14 @@ const Projects = () => {
               key={index}
               className="bg-[#161b22] border border-[#30363d] rounded-xl overflow-hidden hover:border-[#7ee787] hover:-translate-y-2 transition-all duration-300"
             >
-              {/* Image */}
+              {/* Project Image */}
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-52 object-cover"
               />
 
-              {/* Content */}
+              {/* Project Content */}
               <div className="p-6">
                 <div className="flex justify-between items-center">
                   <h3 className="text-xl font-semibold text-white">
@@ -84,7 +91,7 @@ const Projects = () => {
                   {project.desc}
                 </p>
 
-                {/* Tags */}
+                {/* Tech Tags */}
                 <div className="flex flex-wrap gap-2 mt-5">
                   {project.tags.map((tag) => (
                     <span
@@ -102,11 +109,7 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
-                    className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-lg border transition-all duration-300 ${
-                      project.github === "#"
-                        ? "pointer-events-none opacity-50 border-[#30363d] text-[#8b949e]"
-                        : "border-[#30363d] text-white hover:border-[#7ee787] hover:text-[#7ee787]"
-                    }`}
+                    className="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg border border-[#30363d] text-white hover:border-[#7ee787] hover:text-[#7ee787] transition-all duration-300"
                   >
                     <FaGithub />
                     Code
@@ -116,11 +119,7 @@ const Projects = () => {
                     href={project.live}
                     target="_blank"
                     rel="noreferrer"
-                    className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-lg font-semibold transition-all duration-300 ${
-                      project.live === "#"
-                        ? "pointer-events-none opacity-50 bg-gray-600 text-white"
-                        : "bg-[#7ee787] text-black hover:bg-[#9cf3b4]"
-                    }`}
+                    className="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg font-semibold bg-[#7ee787] text-black hover:bg-[#9cf3b4] transition-all duration-300"
                   >
                     <FaExternalLinkAlt size={12} />
                     Live Demo
